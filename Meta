@@ -1,7 +1,7 @@
 =meta: 0.0.2
 
 name: Dist-Zilla-Plugin-TestML1Includer
-version: 0.0.1
+version: 0.0.2
 abstract: Ship your TestML1 version
 homepage: http://testml.org
 language: perl

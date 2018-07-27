@@ -1,5 +1,5 @@
 package Dist::Zilla::Plugin::TestML1Includer;
-our $VERSION = '0.0.1';
+our $VERSION = '0.0.2';
 
 use Moose;
 

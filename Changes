@@ -1,4 +1,9 @@
 ---
+version: 0.0.2
+date:    Fri Jul 27 11:59:17 PDT 2018
+changes:
+- minor changes
+---
 version: 0.0.1
 date:    Fri Jul 27 10:58:09 PDT 2018
 changes:

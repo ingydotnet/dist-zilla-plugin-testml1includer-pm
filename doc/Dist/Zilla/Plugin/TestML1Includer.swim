@@ -16,6 +16,9 @@ In dist.ini:
 This module includes the version of TestML1 on your system with your module
 dist.
 
+TestML1.pm is the old version of [TestML] from 2014-2018. To continue using
+that just change `TestML` to `TestML1`.
+
 = Author
 
 Ingy döt Net <ingy@cpan.org>
