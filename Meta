@@ -1,12 +1,12 @@
 =meta: 0.0.2
 
-name: Dist-Zilla-Plugin-TestMLIncluder
-version: 0.12
-abstract: Ship your TestML version
+name: Dist-Zilla-Plugin-TestML1Includer
+version: 0.0.1
+abstract: Ship your TestML1 version
 homepage: http://testml.org
 language: perl
 license: perl
-copyright: 2014
+copyright: 2018
 
 author:
   name: Ingy döt Net
@@ -17,8 +17,8 @@ author:
   freenode: ingy
 
 devel:
-  git: https://github.com/ingydotnet/dist-zilla-testmlincluder-pm
-  bug: https://github.com/ingydotnet/dit-zilla-testmlincluder/issues
+  git: https://github.com/ingydotnet/dist-zilla-testml1includer-pm
+  bug: https://github.com/ingydotnet/dit-zilla-testml1includer/issues
   irc: irc.freenode.net#pkg
 
 requires:

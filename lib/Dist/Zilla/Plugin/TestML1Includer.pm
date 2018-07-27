@@ -1,5 +1,5 @@
-package Dist::Zilla::Plugin::TestMLIncluder;
-our $VERSION = '0.12';
+package Dist::Zilla::Plugin::TestML1Includer;
+our $VERSION = '0.0.1';
 
 use Moose;
 
@@ -19,19 +19,19 @@ has module => (
     Pegex::Parser
     Pegex::Tree
     Pegex::Receiver
-    TestML::Util
-    TestML::Compiler::Lite
-    TestML::Compiler::Pegex::Grammar
-    TestML::Compiler::Pegex::AST
-    TestML::Compiler::Pegex
-    TestML::Library::Debug
-    TestML::Library::Standard
-    TestML::Compiler
-    TestML::Runtime::TAP
-    TestML::Runtime
-    TestML::Base
-    TestML::Bridge
-    TestML
+    TestML1::Util
+    TestML1::Compiler::Lite
+    TestML1::Compiler::Pegex::Grammar
+    TestML1::Compiler::Pegex::AST
+    TestML1::Compiler::Pegex
+    TestML1::Library::Debug
+    TestML1::Library::Standard
+    TestML1::Compiler
+    TestML1::Runtime::TAP
+    TestML1::Runtime
+    TestML1::Base
+    TestML1::Bridge
+    TestML1
   )]},
 );
 
@@ -43,7 +43,7 @@ has blacklist => (
     },
     default => sub {[qw(
         XXX
-        TestML::Object
+        TestML1::Object
     )]},
 );
 
@@ -52,17 +52,17 @@ sub gather_files {
   my $self = shift;
   for my $prefix (qw(.. ../..)) {
     my $pegex = "$prefix/pegex-pm";
-    my $testml = "$prefix/testml-pm";
+    my $testml1 = "$prefix/testml1-pm";
     if (
         -d "$pegex/.git" and
-        -d "$testml/.git"
+        -d "$testml1/.git"
     ) {
-        eval "use lib '$pegex/lib', '$testml/lib'; 1" or die $@;
+        eval "use lib '$pegex/lib', '$testml1/lib'; 1" or die $@;
         $self->SUPER::gather_files(@_);
         return;
     }
   }
-  die "Pegex and TestML repos missing or not in right state";
+  die "Pegex and TestML1 repos missing or not in right state";
 }
 
 __PACKAGE__->meta->make_immutable;
